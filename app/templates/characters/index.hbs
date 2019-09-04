@@ -1,0 +1,10 @@
+<h2>AI Characters</h2>
+
+{{#each model as |character|}}
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{character.name}}</h5>
+      {{#link-to "characters.show" character.slug class="btn btn-primary"}}Start{{/link-to}}
+    </div>
+  </div>
+{{/each}}

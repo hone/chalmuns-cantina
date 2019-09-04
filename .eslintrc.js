@@ -15,6 +15,7 @@ module.exports = {
     browser: true
   },
   rules: {
+    "no-console": 1
   },
   overrides: [
     // node files
@@ -44,6 +45,6 @@ module.exports = {
         // https://github.com/mysticatea/eslint-plugin-node/issues/77
         'node/no-unpublished-require': 'off'
       })
-    }
-  ]
+    },
+  ],
 };

@@ -1,0 +1,49 @@
+<div class="card">
+  <div class="card-header">
+    {{model.character.name}} 
+    {{#if model.currentCard}}
+      (Card #{{model.currentCard.setId}})
+    {{/if}}
+  </div>
+  <ul class="list-group list-group-flush">
+    {{#if model.currentCard }}
+      <li class="list-group-item">
+        <h6 class="card-title">Planning (Do 1st that applies!)</h6>
+        <ul>
+          {{#each model.currentCard.planning as |step|}}
+            <li class="card-text">{{step}}</li>
+          {{/each}}
+        </ul>
+      </li>
+      <li class="list-group-item">
+        <h6 class="card-title">Action (Do all that apply!)</h6>
+        <ul>
+          {{#each model.currentCard.action as |step|}}
+            <li class="card-text">{{step}}</li>
+          {{/each}}
+        </ul>
+      </li>
+      <li class="list-group-item">
+        <h6 class="card-title">Encounter (Do 1st that applies!)</h6>
+        <ul>
+          {{#each model.currentCard.encounter as |step|}}
+            <li class="card-text">{{step}}</li>
+          {{/each}}
+        </ul>
+      </li>
+    {{else}}
+      <li class="list-group-item">
+        <h6 class="card-title">Character Notes</h6>
+        <ul>
+          {{#each model.character.notes as |step|}}
+            <li class="card-text">{{step}}</li>
+          {{/each}}
+        </ul>
+      </li>
+    {{/if}}
+  </ul>
+
+  <div class="card-body">
+    <button {{action "drawCard"}} class="btn btn-primary">Draw</button>
+  </div>
+</div>

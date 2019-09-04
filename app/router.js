@@ -7,6 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('characters', function() {
+    this.route('show', { path: '/:character_slug' });
+  });
 });
 
 export default Router;
