@@ -26,8 +26,6 @@ export default Route.extend({
       cards.splice(randomIndex, 1);
     }
 
-    cards = shuffledCards;
-
     return shuffledCards;
   },
 
@@ -38,6 +36,9 @@ export default Route.extend({
 
       set(model, 'currentCard', card);
       model.deck.push(card);
+      if (card.setId == 10) {
+        model.deck = this.shuffle(model.deck);
+      }
       set(model, 'deck', model.deck);
     },
   },
