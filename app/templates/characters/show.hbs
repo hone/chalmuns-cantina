@@ -7,39 +7,19 @@
   </div>
   <ul class="list-group list-group-flush">
     {{#if model.currentCard }}
-      <li class="list-group-item">
-        <h6 class="card-title">Planning (Do 1st that applies!)</h6>
-        <ul>
-          {{#each model.currentCard.planning as |step|}}
-            <li class="card-text">{{step}}</li>
-          {{/each}}
-        </ul>
-      </li>
-      <li class="list-group-item">
-        <h6 class="card-title">Action (Do all that apply!)</h6>
-        <ul>
-          {{#each model.currentCard.action as |step|}}
-            <li class="card-text">{{step}}</li>
-          {{/each}}
-        </ul>
-      </li>
-      <li class="list-group-item">
-        <h6 class="card-title">Encounter (Do 1st that applies!)</h6>
-        <ul>
-          {{#each model.currentCard.encounter as |step|}}
-            <li class="card-text">{{step}}</li>
-          {{/each}}
-        </ul>
-      </li>
+      <CardSection @title="Planning" @subtitle="Do 1st that applies!" @steps={{model.currentCard.planning}} />
+      <CardSection @title="Action" @subtitle="Do all that apply!" @steps={{model.currentCard.action}} />
+      <CardSection @title="Encounter" @subtitle="Do 1st that applies!" @steps={{model.currentCard.encounter}} />
+      {{#if model.character.ship}}
+        <CardSection @title="Ship Special" @steps={{model.character.ship}} />
+      {{/if}}
+      {{#if model.currentCard.special}}
+        <CardSection @title="Special" @steps={{model.currentCard.special}} />
+      {{/if}}
     {{else}}
-      <li class="list-group-item">
-        <h6 class="card-title">Character Notes</h6>
-        <ul>
-          {{#each model.character.notes as |step|}}
-            <li class="card-text">{{step}}</li>
-          {{/each}}
-        </ul>
-      </li>
+      {{#if model.character.notes}}
+        <CardSection @title="Character Notes" @steps={{model.character.notes}} />
+      {{/if}}
     {{/if}}
   </ul>
 
