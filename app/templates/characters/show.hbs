@@ -7,9 +7,9 @@
   </div>
   <ul class="list-group list-group-flush">
     {{#if model.currentCard }}
-      <CardSection @title="Planning" @subtitle="Do 1st that applies!" @steps={{model.currentCard.planning}} />
-      <CardSection @title="Action" @subtitle="Do all that apply!" @steps={{model.currentCard.action}} />
-      <CardSection @title="Encounter" @subtitle="Do 1st that applies!" @steps={{model.currentCard.encounter}} />
+      <CardSection @title="Planning" @subtitle="Do first that applies" @steps={{model.currentCard.planning}} />
+      <CardSection @title="Action" @subtitle="Do all that apply" @steps={{model.currentCard.action}} />
+      <CardSection @title="Encounter" @subtitle="Do first that applies" @steps={{model.currentCard.encounter}} />
       {{#if model.character.ship}}
         <CardSection @title="Ship Special" @steps={{model.character.ship}} />
       {{/if}}
