@@ -1,6 +1,6 @@
 .icon-credits {
   background-image: url("/images/icons/credits.svg");
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-position: center center;
   width: 13px;
   height: 14px;
@@ -9,7 +9,7 @@
 
 .icon-negative {
   background-image: url("/images/icons/negative.svg");
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-position: center center;
   width: 18px;
   height: 14px;
