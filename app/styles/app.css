@@ -15,3 +15,12 @@
   height: 14px;
   display: inline-block;
 }
+
+.index-card {
+  width: 31%;
+  margin: 1%;
+}
+
+.card-title {
+  font-size: 100%;
+}

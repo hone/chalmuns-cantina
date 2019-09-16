@@ -1,10 +1,11 @@
 <h3>AI Characters</h3>
-
-{{#each model as |character|}}
-  <div class="card mb-3">
-    <div class="card-body">
-      <h5 class="card-title">{{character.name}}</h5>
-      {{#link-to "characters.show" character.slug class="btn btn-primary"}}Start{{/link-to}}
+<div class="d-flex flex-wrap">
+  {{#each model as |character|}}
+    <div class="card mb-3 index-card">
+      <div class="card-body">
+        <h5 class="card-title">{{character.name}}</h5>
+        {{#link-to "characters.show" character.slug class="btn btn-primary"}}Start{{/link-to}}
+      </div>
     </div>
-  </div>
-{{/each}}
+  {{/each}}
+</div>
