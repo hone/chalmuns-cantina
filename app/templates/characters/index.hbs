@@ -3,8 +3,8 @@
   {{#each model as |character|}}
     <div class="card mb-3 index-card">
       <div class="card-body">
-        <h5 class="card-title">{{character.name}}</h5>
-        {{#link-to "characters.show" character.slug class="btn btn-primary"}}Start{{/link-to}}
+        <h5 class="card-title card-title-index">{{character.name}}</h5>
+        {{#link-to "characters.show" character.slug class="btn btn-primary btn-index"}}Start{{/link-to}}
       </div>
     </div>
   {{/each}}
