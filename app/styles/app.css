@@ -2,8 +2,17 @@ body {
   background-color: #1D1E18
 }
 
-.flex-wrap {
-  
+a {
+  color: #D7DEDC;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8C6788;
+}
+
+.navbar-brand {
+  color: #D7DEDC;
 }
 
 .icon-credits {
@@ -35,19 +44,23 @@ body {
   margin-bottom: 40%;
 }
 
+.btn {
+  color: #1D1E18;
+  background-color: #D7DEDC;
+  border: 1px solid #393E41;
+}
+
+.btn:hover {
+  background-color: #393E41;
+  border: 1px solid #8C6788;
+}
+
 .btn-index {
   display: block;
   width: 75%;
   padding: 0px;
   margin-left: auto;
   margin-right: auto;
-  color: #1D1E18;
-  background-color: #D7DEDC;
-  border: 1px solid #393E41;
-}
-.btn:hover {
-  background-color: #393E41;
-  border: 1px solid #8C6788;
 }
 
 .card-footer {
@@ -57,11 +70,28 @@ body {
   border: none;
 }
 
+.navbar {
+  background-color: #393E41;
+  color: #1D1E18;
+  text-color: black;
+}
+
+.nav-link: {
+  color: black;
+}
+
 .card {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 75px;
   border: 1px solid #393E41;
+}
+
+@media only screen and (min-width: 1300px) {
+  .index-card {
+    width: 23%;
+    margin: 1%;
+  }
 }
 
 @media only screen and (max-width: 700px) {
