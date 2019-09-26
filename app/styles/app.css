@@ -1,3 +1,8 @@
+body {
+  background-color: #1D1E18
+}
+
+
 .icon-credits {
   background-image: url("/images/icons/credits.svg");
   background-repeat: no-repeat;
@@ -33,6 +38,13 @@
   padding: 0px;
   margin-left: auto;
   margin-right: auto;
+  color: #1D1E18;
+  background-color: #D7DEDC;
+  border: 1px solid #393E41;
+}
+.btn:hover {
+  background-color: #393E41;
+  border: 1px solid #8C6788;
 }
 
 .card-footer {
@@ -43,6 +55,9 @@
 }
 
 .card {
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 75px;
+  border: 1px solid #393E41;
 }
 
