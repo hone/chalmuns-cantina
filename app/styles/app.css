@@ -61,7 +61,7 @@ a:hover {
   background-image: url('/images/btnbg.png');
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: stretch;
+  background-size: 100%;
   border: none;
   font-family: 'redfiveregular';
   -moz-transform: rotate(355deg);
