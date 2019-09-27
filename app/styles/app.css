@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'redfiveregular';
-    src: url('fonts/redfive_-webfont.woff2') format('woff2'),
-         url('fonts/redfive_-webfont.woff') format('woff'),
-				 url('fonts/redfive_-webfont.ttf') format('ttf');
+    src: url('./fonts/redfive_-webfont.woff2') format('woff2'),
+         url('./fonts/redfive_-webfont.woff') format('woff'),
+				 url('./fonts/redfive_-webfont.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-  background-color: #1D1E18
+  background-color: #1D1E18;
 }
 
 a {
@@ -60,6 +60,11 @@ a:hover {
   background-color: #D7DEDC;
   border: 1px solid #393E41;
 	font-family: 'redfiveregular';
+  -moz-transform: rotate(355deg);
+	-webkit-transform: rotate(355deg);
+	-o-transform: rotate(355deg);
+	-ms-transform: rotate(355deg);
+	transform: rotate(355deg);
 }
 
 .btn:hover {
