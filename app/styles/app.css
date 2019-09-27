@@ -12,7 +12,7 @@ body {
 }
 
 a {
-	font-family: 'redfiveregular';
+  font-family: 'redfiveregular';
   color: #D7DEDC;
   text-decoration: none;
 }
@@ -56,25 +56,31 @@ a:hover {
 }
 
 .btn {
-  color: #1D1E18;
-  background-color: #D7DEDC;
-  border: 1px solid #393E41;
-	font-family: 'redfiveregular';
+  color: white;
+  background-color: transparent;
+  background-image: url('/images/btnbg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: stretch;
+  border: none;
+  font-family: 'redfiveregular';
   -moz-transform: rotate(355deg);
-	-webkit-transform: rotate(355deg);
-	-o-transform: rotate(355deg);
-	-ms-transform: rotate(355deg);
-	transform: rotate(355deg);
+  -webkit-transform: rotate(355deg);
+  -o-transform: rotate(355deg);
+  -ms-transform: rotate(355deg);
+  transform: rotate(355deg);
 }
 
 .btn:hover {
-  background-color: #393E41;
-  border: 1px solid #8C6788;
+  background-color: transparent;
+  color: #8C6788;
+  border: none;
 }
 
 .btn-index {
   display: block;
   width: 75%;
+  height: 20%;
   padding: 0px;
   margin-left: auto;
   margin-right: auto;
