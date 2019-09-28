@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
 @font-face {
-    font-family: 'redfiveregular';
-    src: url('./fonts/redfive_-webfont.woff2') format('woff2'),
-         url('./fonts/redfive_-webfont.woff') format('woff'),
-				 url('./fonts/redfive_-webfont.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'redfiveregular';
+  src: url('./fonts/redfive_-webfont.woff2') format('woff2'),
+       url('./fonts/redfive_-webfont.woff') format('woff'),
+       url('./fonts/redfive_-webfont.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
 }
 
 a {
-  font-family: 'redfiveregular';
+  font-family: 'Russo One', sans-serif;
   color: #D7DEDC;
   text-decoration: none;
 }
@@ -22,8 +23,9 @@ a:hover {
 }
 
 .navbar-brand {
-	font-family: 'redfiveregular';
-  color: #D7DEDC;
+  color: white;
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.5em;
 }
 
 .icon-credits {
@@ -63,7 +65,7 @@ a:hover {
   background-position: center center;
   background-size: 100%;
   border: none;
-  font-family: 'redfiveregular';
+  font-family: 'Russo One', sans-serif;
   -moz-transform: rotate(355deg);
   -webkit-transform: rotate(355deg);
   -o-transform: rotate(355deg);
@@ -94,10 +96,12 @@ a:hover {
 }
 
 .navbar {
-  background-color: #393E41;
+  background-image: url("/images/navbar.png");
+  background-color: transparent;
+  background-position: top;
+  background-repeat: no-repeat;
   color: #1D1E18;
-  text-color: black;
-  border-bottom: 1px solid #8C6788;
+  border-bottom: none;
 }
 
 .nav-link: {
