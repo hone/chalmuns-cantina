@@ -1,11 +1,13 @@
-<h6 class="card-title">
-  {{title}}
-  {{#if subtitle}}
-    <span> - <small class="text-muted">{{subtitle}}</small></span>
-  {{/if}}
-</h6>
-<ul>
-  {{#each steps as |step|}}
-    <li class="card-text">{{icon-fill step}}</li>
-  {{/each}}
-</ul>
+<li class="list-group-item">
+  <h6 class="card-title">
+    {{@title}}
+    {{#if @subtitle}}
+      <span> - <small class="text-muted">{{@subtitle}}</small></span>
+    {{/if}}
+  </h6>
+  <ul>
+    {{#each @steps as |step|}}
+      <li class="card-text">{{icon-fill step}}</li>
+    {{/each}}
+  </ul>
+</li>

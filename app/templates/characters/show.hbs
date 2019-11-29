@@ -1,13 +1,13 @@
 <div class="card">
   <div class="card-header">
-    {{model.character.name}} 
+    {{this.model.character.name}}
     {{#if model.currentCard}}
-      (Card #{{model.currentCard.number}})
+      (Card #{{this.model.currentCard.number}})
     {{/if}}
   </div>
   <ul class="list-group list-group-flush">
-    {{#if model.currentCard }}
-      <CardSection @title="Planning" @subtitle="Do first that applies" @steps={{model.currentCard.planning}} />
+    {{#if this.model.currentCard }}
+      <CardSection @title="Planning" @subtitle="Do first that applies" @steps={{this.model.currentCard.planning}} />
       <CardSection @title="Action" @subtitle="Do all that apply" @steps={{model.currentCard.action}} />
       <CardSection @title="Encounter" @subtitle="Do first that applies" @steps={{model.currentCard.encounter}} />
       {{#if model.character.ship}}
