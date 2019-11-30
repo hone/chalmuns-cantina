@@ -1,13 +1,13 @@
 <li class="list-group-item">
   <h6 class="card-title">
-    {{@title}}
+    <span data-test-title>{{@title}}</span>
     {{#if @subtitle}}
-      <span> - <small class="text-muted">{{@subtitle}}</small></span>
+      <span> - <small class="text-muted" data-test-subtitle>{{@subtitle}}</small></span>
     {{/if}}
   </h6>
   <ul>
     {{#each @steps as |step|}}
-      <li class="card-text">{{icon-fill step}}</li>
+      <li class="card-text" data-test-step>{{icon-fill step}}</li>
     {{/each}}
   </ul>
 </li>
