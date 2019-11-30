@@ -22,6 +22,10 @@ a:hover {
   color: #8C6788;
 }
 
+.character-card-link {
+  width: 150px;
+}
+
 .navbar-brand {
   color: white;
   font-family: 'Russo One', sans-serif;
@@ -47,8 +51,17 @@ a:hover {
 }
 
 .index-card {
-  width: 31%;
+  width: 100%;
   margin: 1%;
+}
+
+a .index-card:hover {
+  width: 75%;
+  background-image: none;
+}
+
+a:hover {
+  background-image: none;
 }
 
 .card-title-index {
@@ -116,21 +129,21 @@ a:hover {
 }
 
 @media only screen and (min-width: 1300px) {
-  .index-card {
+  .character-card-link {
     width: 23%;
     margin: 1%;
   }
 }
 
 @media only screen and (max-width: 700px) {
-  .index-card {
+  .character-card-link {
     width: 48%;
     margin: 1%;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .index-card {
+  .character-card-link {
     width: 100%;
     margin: 1%;
   }
