@@ -7,7 +7,7 @@ export default helper(function iconFill([string]) {
     return `<i class="icon-credits"></i> ${credits},000`;
   }).replace(/\(-\)/g, function() {
     return `<i class="icon-negative"></i>`;
-  }).replace(/@/, "at").replace(/([A-Z][A-Z]+)/g, function(_, word) {
+  }).replace(/@/, "at").replace(/([A-Z][A-Z]{3,})/g, function(_, word) {
     return `<strong>${word}</strong>`;
   });
 
