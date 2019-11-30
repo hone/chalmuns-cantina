@@ -1,7 +1,7 @@
 import { helper } from '@ember/component/helper';
 import { htmlSafe } from '@ember/string';
 
-export default helper(function characterBackground([image]) {
+function backgroundImageValue(image) {
   let value;
 
   if (image !== 'none') {
@@ -9,5 +9,18 @@ export default helper(function characterBackground([image]) {
   } else {
     value = 'none';
   }
-  return htmlSafe(`background-image: ${value}`);
+
+  return value;
+}
+
+export default helper(function characterBackground([input]) {
+  let images;
+
+  if (Array.isArray(input)) {
+    images = input;
+  } else {
+    images = [input];
+  }
+
+  return htmlSafe(`background-image: ${images.map(i => backgroundImageValue(i)).join(',')}`);
 });

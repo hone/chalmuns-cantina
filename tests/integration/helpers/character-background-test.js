@@ -17,4 +17,11 @@ module('Integration | Helper | character-background', function(hooks) {
 
     assert.equal(find('div').getAttribute('style'), 'background-image: url(/foo/bar.png)');
   });
+
+  test('returns background for mulitple images', async function(assert) {
+    this.inputValue = ['/foo/bar.png', '/foo/baz.png'];
+    await render(hbs`<div style={{character-background this.inputValue}}></div>`);
+
+    assert.equal(find('div').getAttribute('style'), 'background-image: url(/foo/bar.png),url(/foo/baz.png)');
+  });
 });

@@ -13,7 +13,7 @@ export default class CharacterCard extends Component {
     super(owner, args);
     this.characterBackground = args.character.image;
     this.characterHoverBackground = args.character.hoverImage;
-    this.handleMouseLeave();
+    this.background = [this.characterBackground, this.characterHoverBackground];
   }
 
   @action
