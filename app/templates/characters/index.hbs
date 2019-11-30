@@ -1,13 +1,5 @@
 <div class="d-flex flex-wrap">
   {{#each model as |character|}}
-    {{! template-lint-disable  no-inline-styles }}
-    <div style={{character-background character.image}} class="card mb-3 index-card">
-      <LinkTo @route="characters.show" @model={{character.slug}}>
-        <div class="card-body">
-          <h5 class="card-title card-title-index"></h5>
-          <span class="btn btn-primary btn-index">{{character.name}}</span>
-        </div>
-      </LinkTo>
-    </div>
+    <CharacterCard @character={{character}} />
   {{/each}}
 </div>
