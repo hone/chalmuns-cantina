@@ -10,6 +10,7 @@ module('Integration | Component | character-card', function(hooks) {
       name: "Boba Fett",
       slug: "boba-fett",
       image: "/splash/bobafett.jpg",
+      hoverImage: "/splash/bobafett-color.jpg",
     };
   });
 
@@ -23,7 +24,7 @@ module('Integration | Component | character-card', function(hooks) {
     await render(hbs`<CharacterCard @character={{this.character}} />`);
     await triggerEvent('[data-test-index-card]', 'mouseenter');
 
-    assert.equal(find('[data-test-index-card]').getAttribute('style'), 'background-image: none');
+    assert.equal(find('[data-test-index-card]').getAttribute('style'), `background-image: url(${this.character.hoverImage})`);
   });
 
   test('changes background when mouse leaves', async function(assert) {

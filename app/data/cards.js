@@ -3,6 +3,7 @@ export default [
     "name": "Standard",
     "slug": "standard",
     "image": "/splash/standard.jpg",
+    "hoverImage": "/splash/standard-color.jpg",
     "cards": [
       {
         "number": 1,
@@ -187,6 +188,7 @@ export default [
     "name": "Boba Fett",
     "slug": "boba-fett",
     "image": "/splash/bobafett.jpg",
+    "hoverImage": "/splash/bobafett-color.jpg",
     "ship": [
       "Check Ship Goal. If applicable, complete it and gain reward. Then flip ship card."
     ],
@@ -415,6 +417,7 @@ export default [
     "name": "Bossk",
     "slug": "bossk",
     "image": "/splash/bossk.jpg",
+    "hoverImage": "/splash/bossk-color.jpg",
     "ship": [
       "Check Ship Goal. If applicable, complete it and gain reward. Then flip ship card."
     ],
@@ -640,6 +643,7 @@ export default [
     "name": "Doctor Aphra",
     "slug": "doctor-aphra",
     "image": "/splash/doctoraphra.jpg",
+    "hoverImage": "/splash/doctoraphra-color.jpg",
     "ship": [
       "Check Ship Goal. If applicable, complete it and gain reward. Then flip ship card."
     ],
@@ -853,6 +857,7 @@ export default [
     "name": "Han Solo",
     "slug": "han-solo",
     "image": "/splash/hansolo.jpg",
+    "hoverImage": "/splash/hansolo-color.jpg",
     "ship": [
       "Check Ship Goal. If applicable, complete it and gain reward. Then flip ship card."
     ],
@@ -1084,6 +1089,7 @@ export default [
     "name": "IG-88",
     "slug": "ig-88",
     "image": "/splash/ig88.jpg",
+    "hoverImage": "/splash/ig88-color.jpg",
     "ship": [
       "Check Ship Goal. If applicable, complete it and gain reward. Then flip ship card."
     ],
@@ -1316,6 +1322,7 @@ export default [
     "name": "Jyn Erso",
     "slug": "jyn-erso",
     "image": "/splash/jynerso.jpg",
+    "hoverImage": "/splash/jynerso-color.jpg",
     "ship": [
       "Check Ship Goal. If applicable, complete it and gain reward. Then flip ship card."
     ],
@@ -1531,6 +1538,7 @@ export default [
     "name": "Ketsu Onyo",
     "slug": "ketsu-onyo",
     "image": "/splash/ketsuonyo.jpg",
+    "hoverImage": "/splash/ketsuonyo-color.jpg",
     "ship": [
       "Check Ship Goal. If applicable, complete it and gain reward. Then flip ship card."
     ],
@@ -1757,6 +1765,7 @@ export default [
     "name": "Lando Calrissian",
     "slug": "lando-calrissian",
     "image": "/splash/landocalrissian.jpg",
+    "hoverImage": "/splash/landocalrissian-color.jpg",
     "ship": [
       "Check Ship Goal. If applicable, complete it and gain reward. Then flip ship card."
     ],
