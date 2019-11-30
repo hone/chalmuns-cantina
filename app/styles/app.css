@@ -55,11 +55,6 @@ a:hover {
   margin: 1%;
 }
 
-a .index-card:hover {
-  width: 75%;
-  background-image: none;
-}
-
 a:hover {
   background-image: none;
 }

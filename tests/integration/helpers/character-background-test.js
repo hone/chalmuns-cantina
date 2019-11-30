@@ -1,17 +1,20 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
-import { render } from '@ember/test-helpers';
+import { find, render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 
 module('Integration | Helper | character-background', function(hooks) {
   setupRenderingTest(hooks);
 
-  // Replace this with your real tests.
-  test('it renders', async function(assert) {
-    this.set('inputValue', '1234');
+  test('returns background style tag for none', async function(assert) {
+    await render(hbs`<div style={{character-background 'none'}}></div>`);
 
-    await render(hbs`{{character-background inputValue}}`);
+    assert.equal(find('div').getAttribute('style'), 'background-image: none');
+  });
 
-    assert.equal(this.element.textContent.trim(), '1234');
+  test('returns background style tag for a url', async function(assert) {
+    await render(hbs`<div style={{character-background '/foo/bar.png'}}></div>`);
+
+    assert.equal(find('div').getAttribute('style'), 'background-image: url(/foo/bar.png)');
   });
 });
