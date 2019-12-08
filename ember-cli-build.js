@@ -7,7 +7,15 @@ module.exports = function(defaults) {
     'ember-bootstrap': {
       'bootstrapVersion': 4,
       'importBootstrapCSS': true
-    }
+    },
+    'asset-cache': {
+      include: [
+        'splash/*',
+      ],
+      lenientErrors: false,
+      requestMode: 'cors',
+      version: '1',
+    },
   });
 //  app.import('fonts/redfive_-webfont.ttf');
 //  app.import('fonts/redfive_-webfont.woff');
