@@ -1,29 +1,29 @@
 <div class="card">
   <div class="card-header">
-    {{this.model.character.name}}
-    {{#if model.currentCard}}
-      (Card #{{this.model.currentCard.number}})
+    {{@model.character.name}}
+    {{#if @model.currentCard}}
+      (Card #{{@model.currentCard.number}})
     {{/if}}
   </div>
   <ul class="list-group list-group-flush">
-    {{#if this.model.currentCard }}
-      <CardSection @title="Planning" @subtitle="Do first that applies" @steps={{this.model.currentCard.planning}} />
-      <CardSection @title="Action" @subtitle="Do all that apply" @steps={{model.currentCard.action}} />
-      <CardSection @title="Encounter" @subtitle="Do first that applies" @steps={{model.currentCard.encounter}} />
-      {{#if model.character.ship}}
-        <CardSection @title="Ship Special" @steps={{model.character.ship}} />
+    {{#if @model.currentCard }}
+      <CardSection @title="Planning" @subtitle="Do first that applies" @steps={{@model.currentCard.planning}} />
+      <CardSection @title="Action" @subtitle="Do all that apply" @steps={{@model.currentCard.action}} />
+      <CardSection @title="Encounter" @subtitle="Do first that applies" @steps={{@model.currentCard.encounter}} />
+      {{#if @model.character.ship}}
+        <CardSection @title="Ship Special" @steps={{@model.character.ship}} />
       {{/if}}
-      {{#if model.currentCard.special}}
-        <CardSection @title="Special" @steps={{model.currentCard.special}} />
+      {{#if @model.currentCard.special}}
+        <CardSection @title="Special" @steps={{@model.currentCard.special}} />
       {{/if}}
     {{else}}
-      {{#if model.character.notes}}
-        <CardSection @title="Character Notes" @steps={{model.character.notes}} />
+      {{#if @model.character.notes}}
+        <CardSection @title="Character Notes" @steps={{@model.character.notes}} />
       {{/if}}
     {{/if}}
   </ul>
 
   <div class="card-body card-footer">
-    <button {{action "drawCard"}} class="btn btn-primary btn-show">Draw</button>
+    <button {{fn "drawCard"}} class="btn btn-primary btn-show">Draw</button>
   </div>
 </div>
