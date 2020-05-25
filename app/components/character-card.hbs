@@ -1,6 +1,6 @@
 <LinkTo @route="characters.show" @model={{@character.slug}} class="character-card-link">
-  {{! template-lint-disable  no-inline-styles }}
-  <div style={{character-background this.background}} class="card mb-3 index-card" {{on "mouseenter" this.handleMouseEnter}} {{on "mouseleave" this.handleMouseLeave}} data-test-index-card>
+  {{! template-lint-disable no-inline-styles }}
+  <div role="button" style={{character-background this.background}} class="card mb-3 index-card" {{on "mouseenter" this.handleMouseEnter}} {{on "mouseleave" this.handleMouseLeave}} data-test-index-card>
     <div class="card-body">
       <h5 class="card-title card-title-index"></h5>
       <span class="btn btn-primary btn-index" data-test-character-button>{{@character.name}}</span>

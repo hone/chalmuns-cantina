@@ -24,6 +24,6 @@
   </ul>
 
   <div class="card-body card-footer">
-    <button {{action "drawCard"}} class="btn btn-primary btn-show">Draw</button>
-  </div>
-</div>
+    {{! template-lint-disable no-action }}
+    <button type="button" {{action "drawCard"}} class="btn btn-primary btn-show">Draw</button>
+  </div> </div>

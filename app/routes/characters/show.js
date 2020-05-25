@@ -1,6 +1,6 @@
-import Route from '@ember/routing/route';
-import { set } from '@ember/object';
-import characters from 'chalmuns-cantina/data/cards';
+import Route from "@ember/routing/route";
+import { set } from "@ember/object";
+import characters from "chalmuns-cantina/data/cards";
 
 export default Route.extend({
   model(params) {
@@ -11,7 +11,7 @@ export default Route.extend({
     return {
       character: character,
       deck: this.shuffle(Object.assign([], character.cards)),
-      currentCard: null,
+      currentCard: null
     };
   },
 
@@ -31,15 +31,15 @@ export default Route.extend({
 
   actions: {
     drawCard() {
-      let model = this.modelFor('characters.show');
+      let model = this.modelFor("characters.show");
       let card = model.deck.shift();
 
-      set(model, 'currentCard', card);
+      set(model, "currentCard", card);
       model.deck.push(card);
       if (card.number == 10) {
         model.deck = this.shuffle(model.deck);
       }
-      set(model, 'deck', model.deck);
-    },
-  },
+      set(model, "deck", model.deck);
+    }
+  }
 });
