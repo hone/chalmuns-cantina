@@ -15,9 +15,10 @@ module.exports = function (defaults) {
       version: '1',
     },
   });
-  //  app.import('fonts/redfive_-webfont.ttf');
-  //  app.import('fonts/redfive_-webfont.woff');
-  //  app.import('fonts/redfive_-webfont.woff2');
+
+  app.import('fonts/redfive_-webfont.ttf');
+  app.import('fonts/redfive_-webfont.woff');
+  app.import('fonts/redfive_-webfont.woff2');
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
