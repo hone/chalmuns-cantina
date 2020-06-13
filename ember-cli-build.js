@@ -2,16 +2,14 @@
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
-module.exports = function(defaults) {
+module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
     'ember-bootstrap': {
-      'bootstrapVersion': 4,
-      'importBootstrapCSS': true
+      bootstrapVersion: 4,
+      importBootstrapCSS: true,
     },
     'asset-cache': {
-      include: [
-        'splash/*',
-      ],
+      include: ['splash/*'],
       lenientErrors: false,
       requestMode: 'cors',
       version: '1',
@@ -19,13 +17,13 @@ module.exports = function(defaults) {
     babel: {
       plugins: [
         // needed b/c there's a bug with ember-cli-babel defaults right now
-        ["@babel/plugin-proposal-class-properties", { "loose": true }],
+        ['@babel/plugin-proposal-class-properties', { loose: true }],
       ],
-    }
+    },
   });
-//  app.import('fonts/redfive_-webfont.ttf');
-//  app.import('fonts/redfive_-webfont.woff');
-//  app.import('fonts/redfive_-webfont.woff2');
+  //  app.import('fonts/redfive_-webfont.ttf');
+  //  app.import('fonts/redfive_-webfont.woff');
+  //  app.import('fonts/redfive_-webfont.woff2');
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //

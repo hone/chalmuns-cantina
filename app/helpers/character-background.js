@@ -22,5 +22,7 @@ export default helper(function characterBackground([input]) {
     images = [input];
   }
 
-  return htmlSafe(`background-image: ${images.map(i => backgroundImageValue(i)).join(',')}`);
+  return htmlSafe(
+    `background-image: ${images.map((i) => backgroundImageValue(i)).join(',')}`
+  );
 });
