@@ -14,12 +14,6 @@ module.exports = function (defaults) {
       requestMode: 'cors',
       version: '1',
     },
-    babel: {
-      plugins: [
-        // needed b/c there's a bug with ember-cli-babel defaults right now
-        ['@babel/plugin-proposal-class-properties', { loose: true }],
-      ],
-    },
   });
   //  app.import('fonts/redfive_-webfont.ttf');
   //  app.import('fonts/redfive_-webfont.woff');
